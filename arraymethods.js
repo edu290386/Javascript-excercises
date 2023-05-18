@@ -18,7 +18,13 @@ function nextInLine(arr, item) {
   console.log(`After: ${testArr}`);
 
 
-
+const arrOfVowels = ["u", "e", "a", "i", "a", "i", "i", "i", "e", "i", "a", "i", "o", "i", "o", "u"]
+const countVowels = arrOfVowels.reduce((acc, val) => {
+  acc[val] ? (acc[val] += 1) : (acc[val] = 1);
+  console.log(acc);
+  return acc;
+}, {});
+console.log(countVowels);
 
 
 
